@@ -23,7 +23,7 @@ class CarItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: Colors.amber,
+          color: Color.fromARGB(199, 255, 234, 234),
           borderRadius: BorderRadius.circular(10),
           border: Border.all(color: Colors.black12),
         ),
@@ -32,21 +32,32 @@ class CarItem extends StatelessWidget {
           children: [
             Text(
               dataCar.manufacturer!,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
             ),
             const SizedBox(
               height: 5,
             ),
             Text(
               dataCar.model!,
-              style: const TextStyle(fontWeight: FontWeight.normal),
+              style: const TextStyle(
+                fontWeight: FontWeight.normal,
+                fontSize: 15,
+              ),
             ),
             const SizedBox(
               height: 5,
             ),
             Text(dataCar.year!,
                 style: const TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.red))
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
+                )),
+            const SizedBox(
+              height: 5,
+            ),
           ],
         ),
       ),
