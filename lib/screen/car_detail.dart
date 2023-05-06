@@ -1,6 +1,6 @@
 import 'package:car_app_info/provider/data.dart';
-import 'package:flutter/material.dart';
 import 'package:car_app_info/provider/car_data.dart';
+import 'package:flutter/material.dart';
 
 class DetailCar extends StatelessWidget {
   DetailCar({super.key, required this.car});
